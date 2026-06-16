@@ -12,6 +12,18 @@
     "custome_slider_RYC4Ag": {
       "type": "custome-slider",
       "blocks": {
+        "slide_3tf4KQ": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/banner2.jpg",
+            "slide_heading": "The Gift Guide 2",
+            "heading_color": "#000000",
+            "slide_text": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
+            "description_color": "#000000",
+            "slide_button_link": "",
+            "slide_button_text": "Shop Now"
+          }
+        },
         "slide_Nyarmw": {
           "type": "slide",
           "settings": {
@@ -26,6 +38,7 @@
         }
       },
       "block_order": [
+        "slide_3tf4KQ",
         "slide_Nyarmw"
       ],
       "name": "Custom Slider",
