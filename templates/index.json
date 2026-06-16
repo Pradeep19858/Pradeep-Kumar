@@ -369,10 +369,10 @@
           "settings": {
             "product": "classic-varsity-top",
             "button_text": "+",
-            "button_top": 80,
-            "button_left": 85,
+            "button_top": 27,
+            "button_left": 50,
             "button_bg": "#F8F8F8",
-            "button_color": "#ffffff"
+            "button_color": "{{ settings.color_palette.foreground }}"
           }
         },
         "product_JANH9f": {
@@ -380,10 +380,10 @@
           "settings": {
             "product": "dark-denim-top",
             "button_text": "+",
-            "button_top": 80,
-            "button_left": 85,
+            "button_top": 45,
+            "button_left": 69,
             "button_bg": "#F8F8F8",
-            "button_color": "#ffffff"
+            "button_color": "{{ settings.color_palette.foreground }}"
           }
         }
       },
