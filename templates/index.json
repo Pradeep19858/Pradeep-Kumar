@@ -350,7 +350,7 @@
             "button_top": 32,
             "button_left": 58,
             "button_bg": "#F8F8F8",
-            "button_color": "#ffffff"
+            "button_color": "{{ settings.color_palette.foreground }}"
           }
         },
         "product_MXgRHT": {
@@ -358,10 +358,10 @@
           "settings": {
             "product": "classic-leather-jacket",
             "button_text": "+",
-            "button_top": 80,
-            "button_left": 85,
+            "button_top": 27,
+            "button_left": 65,
             "button_bg": "#F8F8F8",
-            "button_color": "#ffffff"
+            "button_color": "{{ settings.color_palette.foreground }}"
           }
         },
         "product_mN3NNy": {
