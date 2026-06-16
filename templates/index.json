@@ -336,10 +336,10 @@
           "settings": {
             "product": "blue-silk-tuxedo",
             "button_text": "+",
-            "button_top": 80,
-            "button_left": 85,
+            "button_top": 56,
+            "button_left": 73,
             "button_bg": "#F8F8F8",
-            "button_color": "#ffffff"
+            "button_color": "{{ settings.color_palette.foreground }}"
           }
         },
         "product_GpRiYr": {
@@ -347,8 +347,8 @@
           "settings": {
             "product": "chequered-red-shirt",
             "button_text": "+",
-            "button_top": 80,
-            "button_left": 85,
+            "button_top": 32,
+            "button_left": 58,
             "button_bg": "#F8F8F8",
             "button_color": "#ffffff"
           }
