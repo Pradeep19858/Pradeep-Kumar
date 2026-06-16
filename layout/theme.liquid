@@ -6,6 +6,16 @@
   lang="{{ request.locale.iso_code }}"
 >
   <head>
+
+    <script src="{{ 'custome-slider.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'custom-product-popup.js' | asset_url }}" defer="defer"></script>
+
+ {{ 'custome-slider.css' | asset_url | stylesheet_tag }}
+
+
+      {{ 'custom-product-popup.css' | asset_url | stylesheet_tag }}
+
+
     {%- if settings.favicon != blank -%}
       <link
         rel="icon"
