@@ -221,6 +221,7 @@ height: 100%;
     display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 15px;
 }
 
 .product-info h2{
