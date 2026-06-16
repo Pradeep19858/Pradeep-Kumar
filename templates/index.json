@@ -327,7 +327,7 @@
             "button_text": "+",
             "button_top": 80,
             "button_left": 85,
-            "button_bg": "#000000",
+            "button_bg": "#F8F8F8",
             "button_color": "#ffffff"
           }
         },
