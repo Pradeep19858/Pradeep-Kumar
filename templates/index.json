@@ -319,6 +319,82 @@
     },
     "custom_product_popup_9P3AEB": {
       "type": "custom-product-popup",
+      "blocks": {
+        "product_Lzzk6R": {
+          "type": "product",
+          "settings": {
+            "product": "black-leather-bag",
+            "button_text": "+",
+            "button_top": 80,
+            "button_left": 85,
+            "button_bg": "#000000",
+            "button_color": "#ffffff"
+          }
+        },
+        "product_KnTdL9": {
+          "type": "product",
+          "settings": {
+            "product": "blue-silk-tuxedo",
+            "button_text": "+",
+            "button_top": 80,
+            "button_left": 85,
+            "button_bg": "#000000",
+            "button_color": "#ffffff"
+          }
+        },
+        "product_GpRiYr": {
+          "type": "product",
+          "settings": {
+            "product": "chequered-red-shirt",
+            "button_text": "+",
+            "button_top": 80,
+            "button_left": 85,
+            "button_bg": "#000000",
+            "button_color": "#ffffff"
+          }
+        },
+        "product_MXgRHT": {
+          "type": "product",
+          "settings": {
+            "product": "classic-leather-jacket",
+            "button_text": "+",
+            "button_top": 80,
+            "button_left": 85,
+            "button_bg": "#000000",
+            "button_color": "#ffffff"
+          }
+        },
+        "product_mN3NNy": {
+          "type": "product",
+          "settings": {
+            "product": "classic-varsity-top",
+            "button_text": "+",
+            "button_top": 80,
+            "button_left": 85,
+            "button_bg": "#000000",
+            "button_color": "#ffffff"
+          }
+        },
+        "product_JANH9f": {
+          "type": "product",
+          "settings": {
+            "product": "dark-denim-top",
+            "button_text": "+",
+            "button_top": 80,
+            "button_left": 85,
+            "button_bg": "#000000",
+            "button_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "product_Lzzk6R",
+        "product_KnTdL9",
+        "product_GpRiYr",
+        "product_MXgRHT",
+        "product_mN3NNy",
+        "product_JANH9f"
+      ],
       "name": "Custom Product Popup Grid",
       "settings": {}
     }
