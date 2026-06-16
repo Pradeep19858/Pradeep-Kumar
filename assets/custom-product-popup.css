@@ -84,11 +84,11 @@
 
 .popup-close {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 0px;
+  right: 4px;
   background: none;
   border: none;
-  font-size: 35px;
+  font-size: 23px;
   cursor: pointer;
   z-index: 5;
 }
