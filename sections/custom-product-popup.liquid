@@ -1,5 +1,13 @@
 <section class="custom-product-grid">
   <div class="page-width">
+
+
+ {% if section.settings.heading != blank %}
+    <h2 class="section-heading">
+      {{ section.settings.heading }}
+    </h2>
+  {% endif %}
+
     <div class="product-grid-wrapper">
 
 
