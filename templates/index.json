@@ -38,10 +38,10 @@
             "description_color": "#000000",
             "slide_button_link": "",
             "slide_button_text": "Shop Now",
-            "button_bg": "#964E4E",
+            "button_bg": "#964e4e",
             "button_hover_bg": "#fff544",
             "button_text_color": "{{ settings.color_palette.foreground }}",
-            "button_hover_text_color": "#000000"
+            "button_hover_text_color": "#FFF544"
           }
         }
       },
