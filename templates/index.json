@@ -301,7 +301,8 @@
         "slide_Nyarmw": {
           "type": "slide",
           "settings": {
-            "slide_heading": "Slider Heading",
+            "slide_image": "shopify://shop_images/banner.jpg",
+            "slide_heading": "Slider Headingfdsf",
             "slide_text": "Slider Description",
             "slide_button_link": "",
             "slide_button_text": "Shop Now"
