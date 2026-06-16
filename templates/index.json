@@ -316,11 +316,17 @@
       ],
       "name": "Custom Slider",
       "settings": {}
+    },
+    "custom_product_popup_9P3AEB": {
+      "type": "custom-product-popup",
+      "name": "Custom Product Popup Grid",
+      "settings": {}
     }
   },
   "order": [
     "hero_jVaWmY",
     "product_list_fa6P9H",
-    "custome_slider_RYC4Ag"
+    "custome_slider_RYC4Ag",
+    "custom_product_popup_9P3AEB"
   ]
 }
