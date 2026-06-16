@@ -301,7 +301,7 @@
         "slide_Nyarmw": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/banner1.jpg",
+            "slide_image": "shopify://shop_images/banner2.jpg",
             "slide_heading": "The Gift Guide",
             "heading_color": "{{ settings.color_palette.foreground }}",
             "slide_text": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
