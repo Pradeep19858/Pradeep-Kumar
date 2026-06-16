@@ -1,0 +1,218 @@
+.custom-product-grid {
+  padding: 80px 20px;
+  background: #f8f8f8;
+}
+
+
+.product-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+
+.product-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+
+.product-image {
+  position: relative;
+}
+
+
+.product-image img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+
+.popup-open-btn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+
+.popup-open-btn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+.custom-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+}
+
+
+.custom-popup.active {
+  display: block;
+}
+
+
+.popup-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+
+.popup-content {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  background: #fff;
+  margin: 5% auto;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+
+.popup-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 35px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+
+.popup-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.popup-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.popup-info {
+  padding: 50px;
+}
+
+
+.popup-price {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+
+.popup-description {
+  margin-bottom: 30px;
+}
+
+
+.color-variants,
+.size-variants {
+  margin-bottom: 25px;
+}
+
+
+.color-variants label,
+.size-variants label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+
+.color-buttons,
+.size-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.color-variant-btn,
+.size-variant-btn {
+  padding: 12px 18px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+
+.size-variant-btn {
+  min-width: 55px;
+  height: 45px;
+}
+
+
+.color-variant-btn:hover,
+.size-variant-btn:hover {
+  border-color: #000;
+}
+
+
+.color-variant-btn.active,
+.size-variant-btn.active {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+
+.add-cart-btn {
+  width: 100%;
+  height: 55px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+
+.cart-message {
+  margin-top: 15px;
+  color: green;
+  font-size: 14px;
+}
+
+
+@media(max-width:768px){
+
+
+  .product-grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+
+  .popup-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .popup-info {
+    padding: 30px;
+  }
+
+
+}
