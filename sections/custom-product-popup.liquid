@@ -1,0 +1,333 @@
+<section class="custom-product-grid">
+  <div class="page-width">
+    <div class="product-grid-wrapper">
+
+
+      {% for block in section.blocks %}
+        {% assign product = all_products[block.settings.product] %}
+
+
+        {% if product %}
+          <div class="product-card">
+
+
+            <div class="product-image">
+
+
+              <img
+                src="{{ product.featured_image | image_url: width: 600 }}"
+                alt="{{ product.title }}"
+                loading="lazy"
+              >
+
+
+              <button
+                class="popup-open-btn"
+                data-popup="popup-{{ block.id }}"
+                style="
+                  top: {{ block.settings.button_top }}%;
+                  left: {{ block.settings.button_left }}%;
+                  background: {{ block.settings.button_bg }};
+                  color: {{ block.settings.button_color }};
+                "
+              >
+                {{ block.settings.button_text }}
+              </button>
+
+
+            </div>
+
+
+            <h3>{{ product.title }}</h3>
+
+
+          </div>
+
+
+          <!-- POPUP -->
+          <div class="custom-popup" id="popup-{{ block.id }}">
+
+
+            <div class="popup-overlay"></div>
+
+
+            <div class="popup-content">
+
+
+              <button class="popup-close">&times;</button>
+
+
+              <div class="popup-grid">
+
+
+                <!-- IMAGE -->
+                <div class="popup-image">
+
+
+                  <img
+                    class="popup-product-image"
+                    src="{{ product.featured_image | image_url: width: 800 }}"
+                    alt="{{ product.title }}"
+                  >
+
+
+                </div>
+
+
+                <!-- INFO -->
+                <div class="popup-info">
+
+
+                  <h2>{{ product.title }}</h2>
+
+
+                  <div class="popup-price">
+                    {{ product.selected_or_first_available_variant.price | money }}
+                  </div>
+
+
+                  <div class="popup-description">
+                    {{ product.description }}
+                  </div>
+
+
+                  <!-- PRODUCT FORM -->
+                  <form class="product-form">
+
+
+                    {% assign color_option_index = 0 %}
+                    {% assign size_option_index = 1 %}
+
+
+                    <!-- COLOR VARIANTS -->
+                    {% if product.options_with_values.size >= 1 %}
+
+
+                      <div class="color-variants">
+
+
+                        <label>{{ product.options[color_option_index] }}</label>
+
+
+                        <div class="color-buttons">
+
+
+                          {% assign displayed_colors = '' %}
+
+
+                          {% for variant in product.variants %}
+
+
+                            {% assign color_value = variant.options[color_option_index] %}
+
+
+                            {% unless displayed_colors contains color_value %}
+
+
+                              {% assign displayed_colors = displayed_colors | append: color_value | append: ',' %}
+
+
+                              <button
+                                type="button"
+                                class="color-variant-btn {% if forloop.first %}active{% endif %}"
+                                data-color="{{ color_value }}"
+                              >
+                                {{ color_value }}
+                              </button>
+
+
+                            {% endunless %}
+
+
+                          {% endfor %}
+
+
+                        </div>
+
+
+                      </div>
+
+
+                    {% endif %}
+
+
+                    <!-- SIZE VARIANTS -->
+                    {% if product.options_with_values.size >= 2 %}
+
+
+                      <div class="size-variants">
+
+
+                        <label>{{ product.options[size_option_index] }}</label>
+
+
+                        <div class="size-buttons">
+
+
+                          {% assign displayed_sizes = '' %}
+
+
+                          {% for variant in product.variants %}
+
+
+                            {% assign size_value = variant.options[size_option_index] %}
+
+
+                            {% unless displayed_sizes contains size_value %}
+
+
+                              {% assign displayed_sizes = displayed_sizes | append: size_value | append: ',' %}
+
+
+                              <button
+                                type="button"
+                                class="size-variant-btn {% if forloop.first %}active{% endif %}"
+                                data-size="{{ size_value }}"
+                              >
+                                {{ size_value }}
+                              </button>
+
+
+                            {% endunless %}
+
+
+                          {% endfor %}
+
+
+                        </div>
+
+
+                      </div>
+
+
+                    {% endif %}
+
+
+                    <!-- HIDDEN VARIANT INPUT -->
+                    <input
+                      type="hidden"
+                      name="id"
+                      class="variant-id-input"
+                      value="{{ product.selected_or_first_available_variant.id }}"
+                    >
+
+
+                    <!-- PRODUCT JSON -->
+                    <script type="application/json" class="product-variants-json">
+                      [
+                        {% for variant in product.variants %}
+                          {
+                            "id": {{ variant.id }},
+                            "color": {{ variant.options[0] | json }},
+                            "size": {{ variant.options[1] | json }},
+                            "price": {{ variant.price | money | json }},
+                            "image": {% if variant.featured_image %}{{ variant.featured_image | image_url: width: 800 | json }}{% else %}{{ product.featured_image | image_url: width: 800 | json }}{% endif %}
+                          }{% unless forloop.last %},{% endunless %}
+                        {% endfor %}
+                      ]
+                    </script>
+
+
+                    <button type="submit" class="add-cart-btn">
+                      ADD TO CART
+                    </button>
+
+
+                  </form>
+
+
+                  <div class="cart-message"></div>
+
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+
+        {% endif %}
+      {% endfor %}
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+{
+  "name": "Custom Product Popup Grid",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select Product"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "+"
+        },
+        {
+          "type": "range",
+          "id": "button_top",
+          "label": "Button Vertical Position",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 80,
+          "unit": "%"
+        },
+        {
+          "type": "range",
+          "id": "button_left",
+          "label": "Button Horizontal Position",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 85,
+          "unit": "%"
+        },
+        {
+          "type": "color",
+          "id": "button_bg",
+          "label": "Button Background",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "button_color",
+          "label": "Button Text Color",
+          "default": "#ffffff"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Custom Product Popup Grid"
+    }
+  ]
+}
+{% endschema %}
