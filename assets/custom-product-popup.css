@@ -14,7 +14,7 @@
 .product-card {
   background: #fff;
   padding: 20px;
-  border-radius: 16px;
+  border-radius:0px;
   text-align: center;
 }
 
@@ -27,7 +27,7 @@
 .product-image img {
   width: 100%;
   display: block;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 
