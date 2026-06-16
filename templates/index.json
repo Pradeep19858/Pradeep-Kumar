@@ -325,8 +325,8 @@
           "settings": {
             "product": "black-leather-bag",
             "button_text": "+",
-            "button_top": 80,
-            "button_left": 85,
+            "button_top": 62,
+            "button_left": 62,
             "button_bg": "#F8F8F8",
             "button_color": "{{ settings.color_palette.foreground }}"
           }
