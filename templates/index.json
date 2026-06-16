@@ -21,7 +21,11 @@
             "slide_text": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
             "description_color": "#000000",
             "slide_button_link": "",
-            "slide_button_text": "Shop Now"
+            "slide_button_text": "Shop Now",
+            "button_bg": "#000000",
+            "button_hover_bg": "#ffffff",
+            "button_text_color": "#ffffff",
+            "button_hover_text_color": "#000000"
           }
         },
         "slide_3tf4KQ": {
@@ -33,7 +37,11 @@
             "slide_text": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
             "description_color": "#000000",
             "slide_button_link": "",
-            "slide_button_text": "Shop Now"
+            "slide_button_text": "Shop Now",
+            "button_bg": "#000000",
+            "button_hover_bg": "#FFF544",
+            "button_text_color": "#ffffff",
+            "button_hover_text_color": "#000000"
           }
         }
       },
