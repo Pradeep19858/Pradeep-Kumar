@@ -27,7 +27,7 @@
 
 .slide-content{
   position: absolute;
-  top: 50%;
+  bottom:0px;
   left: 10%;
   transform: translateY(-50%);
   color: #fff;
