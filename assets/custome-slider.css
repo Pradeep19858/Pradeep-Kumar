@@ -81,6 +81,7 @@
 
 .slider-btn:hover {
   color:var(--hover-text)!important;
+  background:var(--hover-bg)!important;
 }
 
 
