@@ -68,34 +68,27 @@
 
 
                 <!-- IMAGE -->
-                <div class="popup-image">
+                <div class="popup-top-info">
+                    <div class="popup-image">
+                        <img
+                            class="popup-product-image"
+                            src="{{ product.featured_image | image_url: width: 800 }}"
+                            alt="{{ product.title }}"
+                        >
+                    </div>
 
-
-                  <img
-                    class="popup-product-image"
-                    src="{{ product.featured_image | image_url: width: 800 }}"
-                    alt="{{ product.title }}"
-                  >
-
-
+                    <div class="product-info">
+                        <h2>{{ product.title }}</h2>
+                        <div class="popup-price">{{ product.selected_or_first_available_variant.price | money }}</div>
+                        <div class="popup-description">{{ product.description }}</div>
+                    </div>
                 </div>
-
 
                 <!-- INFO -->
                 <div class="popup-info">
 
 
-                  <h2>{{ product.title }}</h2>
-
-
-                  <div class="popup-price">
-                    {{ product.selected_or_first_available_variant.price | money }}
-                  </div>
-
-
-                  <div class="popup-description">
-                    {{ product.description }}
-                  </div>
+                  
 
 
                   <!-- PRODUCT FORM -->
