@@ -41,7 +41,7 @@
             "button_text": "+",
             "button_top": 62,
             "button_left": 62,
-            "button_bg": "#F8F8F8",
+            "button_bg": "#f8f8f8",
             "button_color": "{{ settings.color_palette.foreground }}"
           }
         },
@@ -52,7 +52,7 @@
             "button_text": "+",
             "button_top": 56,
             "button_left": 73,
-            "button_bg": "#F8F8F8",
+            "button_bg": "#f8f8f8",
             "button_color": "{{ settings.color_palette.foreground }}"
           }
         },
@@ -63,7 +63,7 @@
             "button_text": "+",
             "button_top": 32,
             "button_left": 58,
-            "button_bg": "#F8F8F8",
+            "button_bg": "#f8f8f8",
             "button_color": "{{ settings.color_palette.foreground }}"
           }
         },
@@ -74,7 +74,7 @@
             "button_text": "+",
             "button_top": 27,
             "button_left": 65,
-            "button_bg": "#F8F8F8",
+            "button_bg": "#f8f8f8",
             "button_color": "{{ settings.color_palette.foreground }}"
           }
         },
@@ -85,7 +85,7 @@
             "button_text": "+",
             "button_top": 27,
             "button_left": 50,
-            "button_bg": "#F8F8F8",
+            "button_bg": "#f8f8f8",
             "button_color": "{{ settings.color_palette.foreground }}"
           }
         },
@@ -96,7 +96,7 @@
             "button_text": "+",
             "button_top": 45,
             "button_left": 69,
-            "button_bg": "#F8F8F8",
+            "button_bg": "#f8f8f8",
             "button_color": "{{ settings.color_palette.foreground }}"
           }
         }
@@ -110,7 +110,9 @@
         "product_JANH9f"
       ],
       "name": "Custom Product Popup Grid",
-      "settings": {}
+      "settings": {
+        "heading": "Tisso vison in the wild"
+      }
     }
   },
   "order": [
