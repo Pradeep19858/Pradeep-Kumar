@@ -216,3 +216,13 @@
 
 
 }
+
+.popup-top-info{
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product-info h2{
+    font-size:18px;
+}
