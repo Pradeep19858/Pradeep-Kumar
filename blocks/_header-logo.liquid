@@ -63,7 +63,15 @@
       text_fallback: shop.name,
       style: logo_style
     %}
+
+
+{% if block.settings.header_text != blank %}
+  <span>{{ block.settings.header_text }}</span>
+{% endif %}
+
   </span>
+
+
 
   {% if use_inverse_logo %}
     <span
