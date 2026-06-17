@@ -146,9 +146,18 @@
     data-testid="cart-count-live-region"
   ></span>
 
-        <a href="/pages/contact" class="custom-header-btn">
-  Contact Us
-</a>
+  {% if section.settings.custom_button_text != blank %}
+  <a
+    href="{{ section.settings.custom_button_link }}"
+    class="custom-header-button"
+    style="
+      background: {{ section.settings.custom_button_bg }};
+      color: {{ section.settings.custom_button_text_color }};
+    "
+  >
+    {{ section.settings.custom_button_text }}
+  </a>
+{% endif %}
 </header-actions>
 
 <script
