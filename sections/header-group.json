@@ -87,8 +87,10 @@
       "settings": {
         "custom_button_text": "Choose Gift",
         "custom_button_link": "",
-        "custom_button_bg": "#0D0C0C",
+        "custom_button_bg": "#D42222",
         "custom_button_text_color": "#ffffff",
+        "button_hover_bg": "#000000",
+        "button_hover_text": "#FFF544",
         "logo_position": "left",
         "menu_position": "left",
         "menu_row": "top",
