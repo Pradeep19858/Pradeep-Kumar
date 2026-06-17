@@ -11,6 +11,10 @@
   line-height: 1;
 }
 
+.header-actions__action {
+  display: none;
+}
+
 
 .custom-slider-wrapper{
   position: relative;
