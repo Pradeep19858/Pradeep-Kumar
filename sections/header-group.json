@@ -32,6 +32,7 @@
       "block_order": [
         "announcement_BxgCk9"
       ],
+      "disabled": true,
       "name": "t:names.announcement_bar",
       "settings": {
         "speed": 5,
@@ -48,6 +49,7 @@
       "blocks": {
         "header-logo": {
           "type": "_header-logo",
+          "disabled": true,
           "static": true,
           "settings": {
             "hide_logo_on_home_page": false,
