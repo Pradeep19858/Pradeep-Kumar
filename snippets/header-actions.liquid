@@ -147,16 +147,16 @@
   ></span>
 
   {% if section.settings.custom_button_text != blank %}
-  <a
-    href="{{ section.settings.custom_button_link }}"
-    class="custom-header-button"
-    style="
-      background: {{ section.settings.custom_button_bg }};
-      color: {{ section.settings.custom_button_text_color }};
-    "
-  >
-    {{ section.settings.custom_button_text }}
-  </a>
+ <a
+  href="{{ section.settings.custom_button_link }}"
+  class="custom-header-button"
+  style="
+    --hover-bg: {{ section.settings.button_hover_bg }};
+    --hover-text: {{ section.settings.button_hover_text }};
+  "
+>
+  {{ section.settings.custom_button_text }}
+</a>
 {% endif %}
 </header-actions>
 
