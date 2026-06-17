@@ -213,7 +213,7 @@ height: 100%;
   text-align: center;
   max-width: 100%;
   left: 0px;
-  bottom:unset!important;
+  bottom:0!important;
 }
 
 .prev-btn, .next-btn {
