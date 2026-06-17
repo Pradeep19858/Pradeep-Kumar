@@ -222,9 +222,12 @@ height: 100%;
 }
 
   .product-grid-wrapper {
-    grid-template-columns: 1fr;
+     grid-template-columns: repeat(2, 1fr);
   }
 
+   .product-image {
+    min-height: 220px;
+  }
 
   .popup-grid {
     grid-template-columns: 1fr;
