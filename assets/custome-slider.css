@@ -29,7 +29,7 @@
 }
 
 .custom-header-button:hover {
-  color: var(--hover-text);
+  color: var(--hover-text)!important;
 }
 
 .custom-header-button:hover::before {
