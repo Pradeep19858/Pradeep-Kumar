@@ -12,7 +12,7 @@
 }
 
 .header-actions__action {
-  display: none;
+  display: none!important;
 }
 
 
