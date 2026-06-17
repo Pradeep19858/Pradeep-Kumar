@@ -215,6 +215,11 @@ height: 100%;
   left: 0px;
 }
 
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 85%;
+}
+
   .product-grid-wrapper {
     grid-template-columns: 1fr;
   }
