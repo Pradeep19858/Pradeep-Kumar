@@ -21,7 +21,6 @@
   position: absolute;
   inset: 0;
   background: var(--hover-bg);
-  color: var(--hover-text);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform .4s ease;
