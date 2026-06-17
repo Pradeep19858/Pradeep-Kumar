@@ -205,7 +205,9 @@ height: 100%;
   display:none;
 }
 
-
+.header-logo__text {
+  padding: 14px 0;
+}
 
   .product-grid-wrapper {
     grid-template-columns: 1fr;
